@@ -14,7 +14,7 @@
   <main>
     <section class="main" id="home">
       <nav>
-        <a href="#" class="logo">LOGO</a>
+        <a href="#" class="logo"></a>
         <ul class="menu">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -34,12 +34,11 @@
         <p class="details">
           I'm a Full Stack Web Developer with knowledge in HTML5, CSS, Javascript, React, Redux, NodeJs, SQL, Sequelize
         </p>
-        <a href="#" class="cv-btn">Download CV</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/andres-camilo-jaramillo-%C3%A1lvarez-6a2b30170/"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
-      <div class="social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
+
       <div class="arrow"></div>
     </section>
     <section class="about" id="about">
@@ -109,16 +108,16 @@
       <a href="#contact-form">Contact me</a>
     </section>
     <section class="contact-form" id="contact-form">
-      <form action="">
+      <form action="https://formspree.io/f/mgeppozg" method="POST">
         <div class="contact-left">
           <h1 class="c-l-heading">Write me</h1>
           <div class="f-name">
             <label>Name</label>
-            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Full Name" name="name">
           </div>
           <div class="f-email">
             <label>Email</label>
-            <input type="email" placeholder="Example@gmail.com">
+            <input type="email" placeholder="Example@gmail.com" name="_replyto">
           </div>
         </div>
         <div class="contact-right">
@@ -126,7 +125,7 @@
             <label>Message</label>
             <textarea name="message" cols="20" rows="5" placeholder="Write message..."></textarea>
           </div>
-          <button>Submit</button>
+          <button type="submit" value="Send">Submit</button>
         </div>
       </form>
     </section>
