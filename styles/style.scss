@@ -361,6 +361,7 @@ body {
                 font-size: 3rem;
                 letter-spacing: 2px;
                 font-weight: 400;
+                text-align: center;
             }
 
             & .f-email,
@@ -368,6 +369,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 font-family: calibri;
+                width: 100%;
             }
 
             & .f-email label,
@@ -377,14 +379,14 @@ body {
             }
             & .f-email input,
             .f-name input {
-                height: 30px;
-                width: 250px;
+                height: 30%;
+                width: 90%;
                 border: none;
                 outline: none;
                 background-color: transparent;
                 border-bottom: 1px solid #929292;
                 color: #ffffff;
-                margin: 10px 0px;
+                margin: 10px 6px;
             }
             & .f-email input::placeholder,
             .f-name input::placeholder {
@@ -492,6 +494,30 @@ body {
                 left: 20%;
             }
         }
+        .about {
+            justify-content: center;
+
+            & .about-model {
+                display: none;
+            }
+
+            & .about-text {
+                width: 90%;
+                & h1 {
+                    font-size: 4rem;
+                }
+            }
+        }
+        & .projects {
+            & .p-b-container {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    body {
         .about {
             justify-content: center;
 

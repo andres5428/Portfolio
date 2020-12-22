@@ -478,6 +478,7 @@ body .contact-form .contact-left .c-l-heading {
   font-size: 3rem;
   letter-spacing: 2px;
   font-weight: 400;
+  text-align: center;
 }
 
 body .contact-form .contact-left .f-email,
@@ -490,6 +491,7 @@ body .contact-form .contact-left .f-name {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: calibri;
+  width: 100%;
 }
 
 body .contact-form .contact-left .f-email label,
@@ -500,14 +502,14 @@ body .contact-form .contact-left .f-name label {
 
 body .contact-form .contact-left .f-email input,
 body .contact-form .contact-left .f-name input {
-  height: 30px;
-  width: 250px;
+  height: 30%;
+  width: 90%;
   border: none;
   outline: none;
   background-color: transparent;
   border-bottom: 1px solid #929292;
   color: #ffffff;
-  margin: 10px 0px;
+  margin: 10px 6px;
 }
 
 body .contact-form .contact-left .f-email input::-webkit-input-placeholder,
@@ -665,6 +667,26 @@ body .contact-form .contact-right button:hover {
   body .main .social {
     left: 20%;
   }
+  body .about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .about .about-model {
+    display: none;
+  }
+  body .about .about-text {
+    width: 90%;
+  }
+  body .about .about-text h1 {
+    font-size: 4rem;
+  }
+  body .projects .p-b-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) {
   body .about {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
