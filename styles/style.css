@@ -686,7 +686,161 @@ body .contact-form .contact-right button:hover {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 510px) {
+  body {
+    background-color: #161616;
+    width: 100%;
+  }
+  body .main {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background-image: none;
+    background-position: center center;
+    background-size: 100% auto;
+  }
+  body .main nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+  body .main nav .menu {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .main nav .menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+  }
+  body .main nav .menu li a:hover,
+  body .main nav .menu .active {
+    background-color: #292929;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+  body .main nav a {
+    text-decoration: none;
+  }
+  body .main nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+  }
+  body .main .name {
+    font-family: calibri;
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+  }
+  body .main .name p:nth-child(1),
+  body .main .name .details {
+    color: #6c707c;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0.5em;
+  }
+  body .main .name h1 {
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #292929;
+    margin: 0.5em;
+    text-align: center;
+  }
+  body .main .name .cv-btn {
+    width: 200px;
+    height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #292929;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body .main .name .cv-btn:hover {
+    background-color: #131313;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  body .main .name .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .main .name .social a {
+    margin: 6px 2px;
+  }
+  body .main .name .social a i {
+    opacity: 0.7;
+  }
+  body .main .name .social a:hover i {
+    opacity: 1;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  body .main .arrow {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom: 0px;
+    left: -3%;
+    z-index: -2;
+    border-right: 1px solid rgba(41, 41, 41, 0.3);
+  }
+  body .main .arrow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #292929 transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
+  }
   body .about {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -703,6 +857,17 @@ body .contact-form .contact-right button:hover {
   }
   body .projects .p-b-container {
     width: 100%;
+  }
+  .contact-form form {
+    width: 100%;
+    padding: 0.2em;
+  }
+  .contact-form form .contact-left {
+    padding: 0.2em;
+    margin: 0.2em;
+  }
+  .contact-form form .contact-left .c-l-heading {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

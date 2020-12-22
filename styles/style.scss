@@ -516,8 +516,146 @@ body {
     }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 510px) {
     body {
+        background-color: #161616;
+        width: 100%;
+        & .main {
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            background-color: #edf1fd;
+            position: relative;
+            background-image: none;
+            background-position: center center;
+            background-size: 100% auto;
+            & nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 2px;
+                font-family: calibri;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 50px;
+                background-color: #f4f7ff;
+                box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+                z-index: 1;
+                & .menu {
+                    list-style: none;
+                    display: flex;
+                    & li a {
+                        padding: 10px 15px;
+                        color: #6c707c;
+                        font-size: 12px;
+                    }
+
+                    & li a:hover,
+                    .active {
+                        background-color: #292929;
+                        color: #ffffff;
+                        font-weight: 600;
+                        transition: all ease 0.4s;
+                    }
+                }
+
+                & a {
+                    text-decoration: none;
+                }
+
+                & .logo {
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #292929;
+
+                    // font-family: Poppins;
+                }
+            }
+            & .name {
+                font-family: calibri;
+                width: 100%;
+                position: absolute;
+                left: 20%;
+                top: 50%;
+                transform: translate(-20%, -50%);
+
+                & p:nth-child(1),
+                .details {
+                    color: #6c707c;
+                    font-size: 16px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 0.5em;
+                }
+                & h1 {
+                    font-size: 40px;
+                    margin: 0px;
+                    letter-spacing: 3px;
+                    color: #292929;
+                    margin: 0.5em;
+                    text-align: center;
+                }
+
+                & .cv-btn {
+                    width: 200px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #292929;
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: #131313;
+                        transition: all ease 0.5s;
+                    }
+                }
+
+                & .social {
+                    display: flex;
+                    & a {
+                        margin: 6px 2px;
+
+                        & i {
+                            opacity: 0.7;
+                        }
+                        &:hover i {
+                            opacity: 1;
+                            transition: all ease 0.2s;
+                        }
+                    }
+                }
+            }
+
+            & .arrow {
+                align-self: end;
+                width: 50%;
+                height: 15%;
+                margin-bottom: 4em;
+                position: absolute;
+                bottom: 0px;
+                left: -3%;
+                z-index: -2;
+                border-right: 1px solid rgba(41, 41, 41, 0.3);
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 11px 11px 0px 11px;
+                    border-color: #292929 transparent transparent transparent;
+                    right: -0.7em;
+                    bottom: -2px;
+                }
+            }
+        }
         .about {
             justify-content: center;
 
@@ -535,6 +673,20 @@ body {
         & .projects {
             & .p-b-container {
                 width: 100%;
+            }
+        }
+    }
+
+    .contact-form form {
+        width: 100%;
+        padding: 0.2em;
+
+        & .contact-left {
+            padding: 0.2em;
+            margin: 0.2em;
+
+            & .c-l-heading {
+                margin: 0;
             }
         }
     }
